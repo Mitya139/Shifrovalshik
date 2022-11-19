@@ -1,3 +1,5 @@
+import Visener
+import Vernam
+import Caesar
 
-def Shifrovaka():
-    print("Шифрик")
+

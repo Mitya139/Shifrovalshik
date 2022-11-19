@@ -61,3 +61,6 @@ def encrypt_visener_file(way_to_file, key_word, mult=1):
 
 def decrypt_visener_file(way_to_file, key_word):
     encrypt_visener_file(way_to_file, key_word, -1)
+
+
+print(encrypt_visener_text_eng('PROGRAM', 'DOGDOGD'))
