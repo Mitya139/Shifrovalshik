@@ -18,17 +18,20 @@ def caesar_cipher_end(language, text, key, decrypt=False):
 
 
 def visener_cipher_end(language, text, key, decrypt=False):
-    print('\033[32m\033[01mЗашифрованный текст:')
     if language == 'eng':
         if decrypt:
+            print('\033[32m\033[01mРасшифрованный текст:')
             print(Visener.decrypt_visener_text_eng(text, key))
         else:
+            print('\033[32m\033[01mЗашифрованный текст:')
             print(Visener.encrypt_visener_text_eng(text, key))
     elif language == 'rus':
         if decrypt:
+            print('\033[32m\033[01mРасшифрованный текст:')
             print(Visener.decrypt_visener_text_rus(text, key))
         else:
-            print(Visener.decrypt_visener_text_rus(text, key))
+            print('\033[32m\033[01mЗашифрованный текст:')
+            print(Visener.encrypt_visener_text_rus(text, key))
 
 
 def caesar_text_input(language, decrypt=False):
