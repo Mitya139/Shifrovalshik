@@ -1,9 +1,6 @@
-import Visener
-import Vernam
-import Caesar
 import Outputing
+from Inputing import start_in_out
+from Inputing import end_in_out
 
-Outputing.start_output()
-first_
-
-
+start_in_out()
+end_in_out()

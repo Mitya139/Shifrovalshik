@@ -19,4 +19,11 @@ def start_in_out():
         start_in_out()
 
 
-start_in_out()
+def end_in_out():
+    Outputing.end_output()
+    end_in = input()
+    if end_in == '1':
+        start_in_out()
+        end_in_out()
+    if end_in == '2':
+        pass

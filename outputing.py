@@ -2,6 +2,8 @@ def start_output():
     print('Выберите тип шифрования:')
     print('1. Шифровка текста')
     print('2. Шифровка файла')
+    print('3. Расшифровка текста')
+    print('4. Расшифровка файла')
 
 
 def output_files():
@@ -31,3 +33,7 @@ def key_output():
     print('Введите ключ:')
 
 
+def end_output():
+    print('Что теперь?')
+    print('1. Шифровать!')
+    print('2. Выход')

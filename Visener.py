@@ -61,5 +61,3 @@ def encrypt_visener_file(way_to_file, key_word, mult=1):
 
 def decrypt_visener_file(way_to_file, key_word):
     encrypt_visener_file(way_to_file, key_word, -1)
-
-
