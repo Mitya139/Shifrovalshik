@@ -38,10 +38,10 @@ def key_input_caesar_text(language, text):
     key = input()
     try:
         key = int(key)
+        caesar_cipher_end(language, text, key)
     except ValueError:
         print('Некорректный ключ')
         key_input_caesar_text(language, text)
-    caesar_cipher_end(language, text, key)
 
 
 def cipher_text_choice(language):
