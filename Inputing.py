@@ -1,10 +1,10 @@
-import Outputing
+import outputing
 import inputing_for_text
 import inputing_files
 
 
 def start_in_out():
-    Outputing.start_output()
+    outputing.start_output()
     first_in = input()
     if first_in == '1':
         inputing_for_text.language_in_out()
@@ -20,7 +20,7 @@ def start_in_out():
 
 
 def end_in_out():
-    Outputing.end_output()
+    outputing.end_output()
     end_in = input()
     if end_in == '1':
         start_in_out()

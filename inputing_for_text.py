@@ -1,4 +1,4 @@
-import Outputing
+import outputing
 import Caesar
 import Visener
 
@@ -46,7 +46,7 @@ def visener_text_input(language, decrypt=False):
 
 
 def key_input_caesar_text(language, text, decrypt=False):
-    Outputing.key_output()
+    outputing.key_output()
     key = input()
     try:
         key = int(key)
@@ -57,7 +57,7 @@ def key_input_caesar_text(language, text, decrypt=False):
 
 
 def cipher_text_choice(language, decrypt=False):
-    Outputing.output_text()
+    outputing.output_text()
     cipher_text_in = input()
     if cipher_text_in == '1':
         caesar_text_input(language, decrypt)
@@ -71,7 +71,7 @@ def cipher_text_choice(language, decrypt=False):
 
 
 def language_in_out(decrypt=False):
-    Outputing.language_choice()
+    outputing.language_choice()
     language_in = input()
     if language_in == '1':
         cipher_text_choice('rus', decrypt)

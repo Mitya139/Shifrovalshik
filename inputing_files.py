@@ -1,4 +1,4 @@
-import Outputing
+import outputing
 import Caesar
 import Visener
 
@@ -31,7 +31,7 @@ def caesar_cipher_file_end(way_to_file, key, decrypt=False):
 
 
 def caesar_key_files(way_to_file, decrypt=False):
-    Outputing.key_output()
+    outputing.key_output()
     key = input()
     try:
         key = int(key)
@@ -42,7 +42,7 @@ def caesar_key_files(way_to_file, decrypt=False):
 
 
 def visener_cipher_file_end(way_to_file, decrypt=False):
-    Outputing.key_output()
+    outputing.key_output()
     key = input()
     if decrypt:
         Visener.decrypt_visener_file(way_to_file, key)
@@ -53,7 +53,7 @@ def visener_cipher_file_end(way_to_file, decrypt=False):
 
 
 def cipher_file_choice(way_to_file, decrypt=False):
-    Outputing.output_files()
+    outputing.output_files()
     cipher_files_in = input()
     if cipher_files_in == '1':
         caesar_key_files(way_to_file, decrypt)
