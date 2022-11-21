@@ -26,3 +26,8 @@ def language_choice():
     print('1. Русский')
     print('2. English')
 
+
+def key_output():
+    print('Введите ключ:')
+
+
