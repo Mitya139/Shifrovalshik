@@ -15,7 +15,7 @@ def start_in_out():
     elif first_in == '4':
         inputing_files.end_way_to_file_in(True)
     else:
-        print('Некорректный ввод')
+        print('\033[31mНекорректный ввод')
         start_in_out()
 
 

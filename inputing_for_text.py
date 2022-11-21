@@ -4,7 +4,7 @@ import Visener
 
 
 def caesar_cipher_end(language, text, key, decrypt=False):
-    print('Зашифрованный текст:')
+    print('\033[32m\033[01mЗашифрованный текст:')
     if language == 'eng':
         if decrypt:
             print(Caesar.decrypt_caesar_text_eng(text, key))
@@ -18,7 +18,7 @@ def caesar_cipher_end(language, text, key, decrypt=False):
 
 
 def visener_cipher_end(language, text, key, decrypt=False):
-    print('Зашифрованный текст:')
+    print('\033[32m\033[01mЗашифрованный текст:')
     if language == 'eng':
         if decrypt:
             print(Visener.decrypt_visener_text_eng(text, key))
@@ -32,15 +32,15 @@ def visener_cipher_end(language, text, key, decrypt=False):
 
 
 def caesar_text_input(language, decrypt=False):
-    print('Введите текст:')
+    print('\033[35m\033[01mВведите текст:')
     text = input()
     key_input_caesar_text(language, text, decrypt)
 
 
 def visener_text_input(language, decrypt=False):
-    print('Введите текст:')
+    print('\033[35m\033[01mВведите текст:')
     text = input()
-    print('Введите ключ:')
+    print('\033[35m\033[01mВведите ключ:')
     key = input()
     visener_cipher_end(language, text, key, decrypt)
 
@@ -52,7 +52,7 @@ def key_input_caesar_text(language, text, decrypt=False):
         key = int(key)
         caesar_cipher_end(language, text, key, decrypt)
     except ValueError:
-        print('Некорректный ключ')
+        print('\033[31mНекорректный ключ')
         key_input_caesar_text(language, text, decrypt)
 
 
@@ -66,7 +66,7 @@ def cipher_text_choice(language, decrypt=False):
     elif cipher_text_in == '3':
         visener_text_input(language, decrypt)
     else:
-        print('Некорректный ввод')
+        print('\033[31mНекорректный ввод')
         cipher_text_choice(language, decrypt)
 
 
@@ -78,5 +78,5 @@ def language_in_out(decrypt=False):
     elif language_in == '2':
         cipher_text_choice('eng', decrypt)
     else:
-        print('Некорректный ввод')
+        print('\033[31mНекорректный ввод')
         language_in_out(decrypt)
