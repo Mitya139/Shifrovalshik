@@ -10,8 +10,19 @@ def output_files():
     print('2. Шифр Виженера')
 
 
+def end_output_file():
+    print('Введите путь к файлу:')
+
+
 def output_text():
     print('Выберите шифрование:')
     print('1. Шифр Цезаря')
     print('2. Шифр Виженера')
     print('3. Шифр Вернама')
+
+
+def language_choice():
+    print('Выберите язык:')
+    print('1. Русский')
+    print('2. English')
+
