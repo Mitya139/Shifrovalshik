@@ -4,16 +4,19 @@ import Visener
 
 
 def caesar_cipher_end(language, text, key, decrypt=False):
-    print('\033[32m\033[01mЗашифрованный текст:')
     if language == 'eng':
         if decrypt:
+            print('\033[32m\033[01mРасшифрованный текст:')
             print(Caesar.decrypt_caesar_text_eng(text, key))
         else:
+            print('\033[32m\033[01mЗашифрованный текст:')
             print(Caesar.encrypt_caesar_text_eng(text, key))
     elif language == 'rus':
         if decrypt:
+            print('\033[32m\033[01mРасшифрованный текст:')
             print(Caesar.decrypt_caesar_text_rus(text, key))
         else:
+            print('\033[32m\033[01mЗашифрованный текст:')
             print(Caesar.encrypt_caesar_text_rus(text, key))
 
 
