@@ -1,3 +1,5 @@
+from Inputing import start_in_out
+from Inputing import end_in_out
 
-def Shifrovaka():
-    print("Шифрик")
+start_in_out()
+end_in_out()
